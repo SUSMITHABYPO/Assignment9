@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Info</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        body{
+            padding-left: 45%;
+            padding-top: 7%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Customer Info</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter name"><br><br>
+
+        <label for="Contact">Contact:</label>
+        <input type="tel" id="Contact" name="phone" pattern="[0-9]{10}" placeholder="Enter phone no"><br><br>
+      
+
+        <label for="days">Preferred Days:</label>
+        <input type="text" id="days" name="days" placeholder="Enter Preferred days">
+        <br><br>
+        <label for="item">Choose Favorite Item:</label>
+        <select id="item" name="item" required>
+            <option value="">Select</option>
+            <option value="chocolates">Chocolates</option>
+            <option value = "icecreams">Icecreams</option>
+            <option value = "drinks">Soft Drinks</option>
+        </select><br><br>
+
+        <label for="suggestions">Suggestions:</label>
+        <textarea id="suggestions" name="suggestions" placeholder="Type suggestions or feedback" rows = 5></textarea><br>
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
